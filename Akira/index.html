@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Ti ❤️</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+
+<!-- SOBRE -->
+
+<div id="envelopeContainer">
+
+<div id="envelope" onclick="abrirCarta()">
+
+<i class="bi bi-envelope-heart"></i>
+<p>Haz click para abrir</p>
+
+</div>
+
+</div>
+
+
+
+<!-- CARTA -->
+
+<div id="letter" class="container text-center hidden">
+
+<div class="card p-4 shadow">
+
+<h2 class="mb-3">
+<i class="bi bi-heart-fill text-danger"></i>
+Para ti
+</h2>
+
+<p class="message-text">
+
+Quería hacer algo especial para recordarte lo importante que eres para mí.
+Cada momento contigo se convierte en un recuerdo que guardo con mucho cariño.
+
+</p>
+
+<button class="btn btn-danger mt-3" onclick="startGame()">
+
+<i class="bi bi-controller"></i>
+Abrir sorpresa
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- JUEGO + RECUERDOS -->
+
+<div id="gameSection" class="container hidden">
+
+<div class="row mt-5">
+
+
+<!-- JUEGO -->
+
+<div class="col-lg-6 col-md-6 col-12 text-center">
+
+<h3 class="mb-4">
+<i class="bi bi-heart-fill text-danger"></i>
+Atrapa los corazones
+</h3>
+
+<div id="gameArea"></div>
+
+</div>
+
+
+
+<!-- MEMORIA -->
+
+<div class="col-lg-6 col-md-6 col-12 text-center">
+
+<div class="memory-card">
+
+<img id="memoryImg">
+
+<p id="memoryText">
+
+Cada corazón guarda un recuerdo contigo.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- MENSAJE FINAL -->
+
+<div id="finalMessage" class="container text-center hidden">
+
+<div class="card p-5 shadow mt-5">
+
+<h2>
+<i class="bi bi-heart-fill text-danger"></i>
+</h2>
+
+<p class="final-text">
+
+Sin importar la distancia,
+valoro cada momento contigo.
+
+Gracias por existir en mi vida.
+
+Te amo demasiado ❤️
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+<audio id="music" loop>
+    <source src="audio/Bésame.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
